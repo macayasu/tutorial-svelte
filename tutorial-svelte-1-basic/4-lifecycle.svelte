@@ -1,19 +1,23 @@
 <script>
   import {
     onMount,
-    onDestroy,
+    tick,
     beforeUpdate,
     afterUpdate,
-    tick
+    onDestroy
   } from 'svelte'
 
-	let photos = []
+  let photos = []
 
   // Dijalankan setelah halaman di buat
-	onMount(async () => {
+  onMount(async () => {
     const res = await fetch('...')
+    photos = await res.json()
 
-		photos = await res.json()
+    // Menunggu suatu proses yang belum selesai
+    await tick()
+
+    // do something here
   })
 
   // Dijalankan ketika komponen akan di buat

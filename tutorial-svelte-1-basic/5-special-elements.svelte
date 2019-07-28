@@ -10,13 +10,13 @@
 
 <!-- Memasukan HTML ke dalam tag Head -->
 <svelte:head>
-	<title>Custom Title</title>
+  <title>Custom Title</title>
 </svelte:head>
 
 <!-- Memasukan / menjalankan fungsi pada tag Body -->
 <svelte:body
-	on:mouseenter={handleMouseenter}
-	on:mouseleave={handleMouseleave}
+  on:mouseenter={handleMouseenter}
+  on:mouseleave={handleMouseleave}
 />
 
 <!-- Melakukan re-konfigurasi Svelte compiler -->

@@ -4,12 +4,12 @@
   const string = `this string contains some <strong>HTML!!!</strong>`
 
   // Definisi dynamic variabel
-	let count = 0;
+  let count = 0;
   let name = 'Dunia'
 
   // Definisi fungsi
-	function handleClick() {
-		count += 1;
+  function handleClick() {
+    count += 1;
   }
 
   // Definisi reactive variabel
@@ -44,7 +44,7 @@
     <p>Penghitungan belum melebihi 10</p>
   {/if}
 
-	<ul>
+  <ul>
     <!-- Mencetak tulisan dalam perulangan -->
     {#each [0, 1, 2] as index}
       <li>Angka ke {index + 1}</li>
